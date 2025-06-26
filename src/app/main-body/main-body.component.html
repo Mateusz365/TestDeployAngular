@@ -1,0 +1,28 @@
+<br />
+<p>main-body works!</p>
+
+<p>{{ title }}</p>
+
+<label>
+  {{ nameInputLabel }}
+  <input
+    #nameField
+    type="text"
+    [disabled]="inputIsDissabled"
+    (input)="showMyNameValue(nameField.value)"
+    (mouseover)="monitor(nameField.value)"
+  />
+</label>
+<br />
+<label>
+  {{ surnameInputLabel }}
+  <input type="text" [disabled]="inputIsDissabled" />
+</label>
+
+<br />
+<button #buttonik (click)="clickMyButton()">Włącz formularz</button>
+<br />
+<button #buttonik2 (click)="clickMyButton2()">Wyłącz formularz</button>
+<br />
+<button #buttoniksave (click)="clickMyButtonSave($event)">Zapisz</button>
+<br />

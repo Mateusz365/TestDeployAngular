@@ -1,0 +1,27 @@
+<div class="panel">
+  <label>{{ nameLabel }}</label>
+  <input 
+  type="text" 
+  (keydown)="onKeyUp($event)"
+  />
+  <label>{{ surNameLabel }}</label>
+  
+  <input 
+  type="text" 
+  [disabled]="SurnameIsDissable"
+  />
+  <label>{{ ageLabel }}</label>
+  <input 
+  #ValueInput
+  type="number"
+  [disabled]="AgeIsDissable"
+  (input)="showMyValue(ValueInput.value)"
+  />
+  <div>
+  <button 
+  (ondblclick)="onClicked($event)">{{buttonLabbel}}</button> <!--przekazywanie z klasy do komponentu-->
+  </div>
+
+
+</div>
+

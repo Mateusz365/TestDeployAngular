@@ -1,0 +1,15 @@
+<p>{{ name }}</p>
+
+<div>{{ name }}</div>
+<button (click)="makeUpperCase()">Save</button>
+<button (click)="makeLoweCase()">Save</button>
+
+<br />
+<label>
+  Name
+  <input #nameValue [disabled]="isDisabled" type="text" />
+</label>
+
+<button (click)="saveValue2(nameValue.value)">SaveNew</button>
+
+<h2>{{ mainlabel }}</h2>
