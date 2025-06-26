@@ -34,7 +34,7 @@ export class MainBodyComponent {
 
   monitor(message: string) {
     if (message.length > 0) {
-      console.log(`Hello ${message}, how old are you?`);
+      console.log(`Hello ${message}, how old are you? `);
     }
   }
 
